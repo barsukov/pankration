@@ -4,9 +4,10 @@ gem 'rails', '3.2.8'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+group :development, :test do
+  gem 'sqlite3'
+end
 gem 'pg'
-
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -19,9 +20,10 @@ group :assets do
   gem "twitter-bootstrap-rails"
   gem 'uglifier', '>= 1.0.3'
 end
-
+gem 'haml-rails'
 gem 'jquery-rails'
-
+gem "refinerycms"
+gem 'refinerycms-page-images', '~> 2.0.0'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
