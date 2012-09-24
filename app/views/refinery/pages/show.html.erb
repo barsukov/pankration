@@ -1,0 +1,23 @@
+<%= stylesheet_link_tag  "application", :media => "all"%>
+<%= javascript_include_tag "application" %>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('a.fancybox').fancybox({
+
+            closeBtn  : true,
+            arrows    : true,
+            nextClick : true
+        });
+    });
+</script>
+
+<% content_for :body_content_right do %>
+    <ul id='gallery'>
+      <% @page.images.each do |image| %>
+          <li>
+            <%= link_to image_tag(image.thumbnail("200x200#c").url), image.thumbnail("900x600").url,:class => "fancybox","data-fancybox-group" => 'thumb' %>
+          </li>
+      <% end %>
+    </ul>
+<% end %>
+<%= render '/refinery/content_page' %>

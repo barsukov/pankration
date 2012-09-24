@@ -22,6 +22,7 @@ group :assets do
 end
 gem 'haml-rails'
 gem 'jquery-rails'
+gem 'fancybox-rails'
 gem "refinerycms"
 gem 'refinerycms-page-images', '~> 2.0.0'
 # To use ActiveModel has_secure_password
