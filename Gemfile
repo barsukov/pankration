@@ -6,6 +6,7 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :development, :test do
   gem 'sqlite3'
+  gem "hirb"
 end
 gem 'pg'
 
@@ -24,6 +25,7 @@ gem 'haml-rails'
 gem 'jquery-rails'
 gem 'fancybox-rails'
 gem "refinerycms"
+gem 'refinerycms-i18n', :git => 'git://github.com/parndt/refinerycms-i18n.git'
 gem 'refinerycms-page-images', '~> 2.0.0'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

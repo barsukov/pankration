@@ -27,10 +27,6 @@ Refinery::Core.configure do |config|
   # Hide/show child pages in menu
   # config.menu_hide_children = false
 
-  # CSS class selectors for menu helper
-   config.menu_css = {:selected=>"selected", :first=>"first", :last=>"last"}
-   config.register_stylesheet "refinerycms-bootstrap.css.scss", :media => 'screen'
-
   # Should set this if concerned about DOS attacks. See
   # http://markevans.github.com/dragonfly/file.Configuration.html#Configuration
   # config.dragonfly_secret = "bbe6239804f2084ff91028bae2dace61f64740174c6f2cee"

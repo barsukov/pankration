@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/parndt/refinerycms-i18n.git
+  revision: 2a6d35554421d4e0a2ebeba6eb291bcd0ade9291
+  specs:
+    refinerycms-i18n (2.1.0.dev)
+      rails-i18n (~> 0.6.5)
+      refinerycms-core (~> 2.0)
+      routing-filter (~> 0.3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -82,6 +91,7 @@ GEM
       railties (>= 3.1, < 4.1)
     highline (1.6.15)
     hike (1.2.1)
+    hirb (0.7.0)
     i18n (0.6.1)
     journey (1.0.4)
     jquery-rails (2.0.2)
@@ -130,6 +140,8 @@ GEM
       activesupport (= 3.2.8)
       bundler (~> 1.0)
       railties (= 3.2.8)
+    rails-i18n (0.6.6)
+      i18n (~> 0.5)
     railties (3.2.8)
       actionpack (= 3.2.8)
       activesupport (= 3.2.8)
@@ -181,6 +193,8 @@ GEM
       dragonfly (~> 0.9.8)
       rack-cache (>= 0.5.3)
       refinerycms-core (= 2.0.8)
+    routing-filter (0.3.1)
+      actionpack
     sass (3.1.20)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
@@ -223,10 +237,12 @@ DEPENDENCIES
   debugger
   fancybox-rails
   haml-rails
+  hirb
   jquery-rails
   pg
   rails (= 3.2.8)
   refinerycms
+  refinerycms-i18n!
   refinerycms-page-images (~> 2.0.0)
   sass-rails (~> 3.2.3)
   sqlite3
