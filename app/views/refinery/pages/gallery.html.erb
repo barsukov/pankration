@@ -1,0 +1,18 @@
+<% content_for :body_content_right do %>
+
+    <div id="myCarousel" class="carousel slide">
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+         <% @page.images.each do |image| %>
+            <div class="item">
+              <%= image_tag(image.thumbnail("800x600").url)%>
+            </div>
+         <% end %>
+      </div>
+
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+<% end %>
+<%= render '/refinery/content_page' %>
