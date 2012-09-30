@@ -14,5 +14,4 @@
 //= require fancybox
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require twitter/bootstrap-carousel.js
 //= require_tree .
