@@ -13,7 +13,7 @@ development:
 
 production:
   adapter: postgresql
-  host: postgresql2.locum.ru
+  host: postgresql0.locum.ru
   database: barsukov_pankr12
   user: barsukov_pankr12
   password: QiMvUK2M
