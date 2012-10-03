@@ -6,7 +6,7 @@
 development:
   adapter: postgresql
   database: pankration
-  user: vladimir
+  username: vladimir
   password: pankration
   pool: 5
   timeout: 5000
@@ -16,7 +16,7 @@ production:
   encoding: unicode
   host: postgresql2.locum.ru
   database: barsukov_pankr12
-  user: barsukov_pankr12
+  username: barsukov_pankr12
   password: QiMvUK2M
   pool: 5
   timeout: 5000
